@@ -8,7 +8,7 @@ books = pd.read_csv('./data/books.csv')
 books = books.drop(['Image-URL-S', 'Image-URL-M', 'Image-URL-L'], axis=1)
 
 # Realizar la unión basada en la columna ISBN
-merged_data = pd.merge(ratings, books, on='ISBN', how='inner')
+merged_data = pd.merge(ratings, books, on='ISBN', how='left')  # Use 'left' join to keep all rows from 'ratings'
 
 # Guardar los resultados en un nuevo archivo CSV
 merged_data.to_csv('merged_data.csv', index=False)
