@@ -22,4 +22,4 @@ La red neuronal basada en filtros colaborativos utiliza la interacción entre us
 
 El modelo se compila con la función de pérdida de error cuadrático medio (mean_squared_error) y se entrena utilizando los datos de entrenamiento durante 5 épocas.
 
-Ambos modelos se entrenan con datos distintos y emplean enfoques diferentes para generar recomendaciones de libros. Mientras que la red basada en contenido se enfoca en las características intrínsecas de los libros, la red basada en filtros colaborativos se centra en las interacciones entre usuarios y libros para realizar recomendaciones personalizadas.
+Ambos modelos se entrenan con un mismo dataset y emplean enfoques diferentes para generar recomendaciones de libros. Mientras que la red basada en contenido se enfoca en las características intrínsecas de los libros, la red basada en filtros colaborativos se centra en las interacciones entre usuarios y libros para realizar recomendaciones personalizadas.
